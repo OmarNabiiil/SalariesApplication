@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow android:id="@+id/my_row"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:padding="6dip" >
+
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellborder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:ellipsize="end"
+            android:maxLines="100"
+            android:padding="5dp"
+            android:text="ID" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellborder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:ellipsize="end"
+            android:maxLines="100"
+            android:padding="5dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textSalary"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellborder"
+            android:ellipsize="end"
+            android:maxLines="100"
+            android:padding="5dp"
+            android:text="Salary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textState"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellborder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:ellipsize="end"
+            android:maxLines="100"
+            android:padding="5dp"
+            android:text="State" />
+
+        <TextView
+            android:id="@+id/textReceivedDate"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellborder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:ellipsize="end"
+            android:maxLines="100"
+            android:padding="5dp"
+            android:text="Received Date" />
+
+        <TextView
+            android:id="@+id/textSalaryMonth"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellborder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:ellipsize="end"
+            android:maxLines="100"
+            android:padding="5dp"
+            android:text="Salary Month" />
+    </TableRow>
+
+</FrameLayout>

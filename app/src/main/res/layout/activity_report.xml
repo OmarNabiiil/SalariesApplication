@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.developer001.greenzoneapplication.ReportActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="No Date Selected"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:background="#949191"
+            android:onClick="SelectDate"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:padding="10dp"
+            android:onClick="Save"
+            android:text="Export"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:padding="10dp"
+            android:onClick="Print"
+            android:text="Print"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/my_header"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+
+                <TextView
+                    android:id="@+id/textID"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cellborder"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:ellipsize="end"
+                    android:maxLines="100"
+                    android:padding="5dp"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cellborder"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:ellipsize="end"
+                    android:maxLines="100"
+                    android:padding="5dp"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/textSalary"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cellborder"
+                    android:ellipsize="end"
+                    android:maxLines="100"
+                    android:padding="5dp"
+                    android:text="Salary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textState"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cellborder"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:ellipsize="end"
+                    android:maxLines="100"
+                    android:padding="5dp"
+                    android:text="State" />
+
+                <TextView
+                    android:id="@+id/textReceivedDate"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cellborder"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:ellipsize="end"
+                    android:maxLines="100"
+                    android:padding="5dp"
+                    android:text="Received Date" />
+
+                <TextView
+                    android:id="@+id/textSalaryMonth"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cellborder"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:ellipsize="end"
+                    android:maxLines="100"
+                    android:padding="5dp"
+                    android:text="Salary Month" />
+
+            </TableRow>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_header"
+                android:scrollbars="vertical"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

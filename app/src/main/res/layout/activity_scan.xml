@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cbcbcb"
+    tools:context="com.example.developer001.greenzoneapplication.ScanActivity">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tigris2"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgFP1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/edittext_bg"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_barcode"
+                android:layout_width="580dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="Barcode"
+                android:background="@drawable/txt_borders"/>
+
+            <TextView
+                android:id="@+id/txt_arname"
+                android:layout_width="580dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="الاسم بالعربي"
+                android:background="@drawable/txt_borders"/>
+
+            <TextView
+                android:id="@+id/txt_enname"
+                android:layout_width="580dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="English name"
+                android:background="@drawable/txt_borders"/>
+
+            <TextView
+                android:id="@+id/txt_birthdate"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="25dp"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="الميلاد"
+                android:background="@drawable/txt_borders"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_publishdate"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:textAlignment="center"
+                    android:text="الانتهاء"
+                    android:textSize="25dp"
+                    android:background="@drawable/txt_borders"/>
+
+                <Space
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_expiredate"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="الاصدار"
+                    android:textSize="25dp"
+                    android:background="@drawable/txt_borders"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="البريد"
+                android:background="@drawable/txt_borders"/>
+
+            <TextView
+                android:id="@+id/txt_company"
+                android:layout_width="580dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="شركة التوظيف"
+                android:background="@drawable/txt_borders"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/verify_btn"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:text="التحقق من البصمة"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:background="#098bbe"/>
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:text="تفريغ الحقول"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:background="#098bbe"/>
+
+        <Button
+            android:id="@+id/read_btn"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:text="قراءة البطاقة"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:background="#098bbe"/>
+
+    </LinearLayout>
+
+</LinearLayout>
